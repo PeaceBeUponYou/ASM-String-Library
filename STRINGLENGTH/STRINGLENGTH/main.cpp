@@ -1,3 +1,6 @@
+//Author: PeaceBeUponYou
+//Consider supporting me: https://www.patreon.com/peaceCheats
+
 #include<iostream>
 
 using namespace std;
