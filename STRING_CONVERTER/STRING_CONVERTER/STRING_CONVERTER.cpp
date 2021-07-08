@@ -1,3 +1,5 @@
+//Author : PeaceBeUponYou
+
 #include <iostream>
 extern "C" void normalToUnicode(char*, wchar_t*);
 extern "C" void unicodeToNormal(wchar_t*, char*);
