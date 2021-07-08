@@ -1,3 +1,4 @@
+;//Author : PeaceBeUponYou
 .code
 normalToUnicode proc ;normalToUnicode(char*, wchar_t*)
     enter 0,0
