@@ -176,14 +176,17 @@ mcSkip2:
 checkDest:
     cmp dword ptr [rbp+30h],01 
     jl silk
-    mov dword ptr [rbp+30h],00 
-    mov ecx,[rcx+4]
+    xor rcx,rcx
     mov rdx,[rbp+48h]
-    mov [rdx],ecx
-    mov [rdx+4],ecx
+    mov [rdx],rcx
+    mov ecx, dword ptr [rbp+30h] 
+    sub rdi,rcx
+    mov rcx,[rbp+28h]
+    mov eax, dword ptr [rbp+30h] 
+    sub [rcx], eax
+    mov dword ptr [rbp+30h],00 
     mov rsi,[rbp+18h]
     lodsb
-    mov rcx,[rbp+28h]
 silk:
     cmp byte ptr [rdi],00
     jne findloop
